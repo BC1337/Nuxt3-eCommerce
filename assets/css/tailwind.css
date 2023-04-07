@@ -1,0 +1,127 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-50
+}
+
+@layer components {
+    .btn {
+        @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white
+    }
+}
+
+.card {
+    @apply p-3 rounded-md bg-white shadow-md h-full;
+}
+ */
+
+/* test */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50
+}
+
+@layer components {
+  .btn {
+    @apply bg-[#12b488] text-white px-2 py-1 rounded-md text-sm text-white;
+  }
+}
+
+.card {
+    @apply p-3 rounded-md bg-white shadow-md h-full flex flex-col justify-between;
+    min-width: 200px;
+}
+  
+  .title {
+    @apply font-bold text-gray-500 m-4 truncate;
+  }
+  
+  .btn-container {
+    @apply flex justify-center items-center;
+  }
+  
+  /* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-50
+}
+
+@layer components {
+    .btn {
+        @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white
+    }
+}
+
+.card {
+    @apply p-3 rounded-md bg-white shadow-md h-full;
+}
+ */
+
+/* test */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50
+}
+
+@layer components {
+  .btn {
+    @apply bg-[#12b488] text-white px-2 py-1 rounded-md text-sm text-white;
+  }
+}
+
+.card {
+    @apply p-3 rounded-md bg-white shadow-md h-full flex flex-col justify-between;
+    min-width: 200px;
+}
+  
+  .title {
+    @apply font-bold text-gray-500 m-4 truncate;
+  }
+  
+  .btn-container {
+    @apply flex justify-center items-center;
+  }
+
+  /* media queries to try and make it more resizeable */
+  @media screen and (max-width: 374px) {
+    .card {
+      width: 100%;
+      max-width: 300px; 
+    }
+  }
+  
+  @media screen and (min-width: 375px) and (max-width: 769px) {
+    .card {
+      width: 100%;
+      max-width: 500px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 640px) {
+    img {
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 770px) {
+    img {
+      max-width: 50%;
+    }
+    .description-container {
+      min-width: 350px;
+    }
+  }
+  
